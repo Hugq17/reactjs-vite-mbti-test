@@ -1,0 +1,9 @@
+.button-wrapper button {
+    background-color: #FEFAF6;
+    transition: background-color 0.3s ease;
+}
+
+.button-wrapper button:hover,
+.button-wrapper button.selected {
+    background-color: lightgray;
+}
