@@ -166,15 +166,17 @@ function MBTI() {
 
                         </div>
                     )}
-                    <div className='flex'>
-                        {count !== 0 && (
-                            <button onClick={handleClickDre} className='ml-5'><FaArrowLeft /></button>
-                        )}
-                        {count === 73 && (
-                            <div className='border-[1px] p-4 rounded-3xl ml-7 hover:bg-[#F27BBD] hover:text-white'>
-                                <button onClick={handleClickResult}>Xem kết quả</button>
-                            </div>
-                        )}
+                    <div className='flex flex-col mt-8'>
+                        <div className='flex'>
+                            {count !== 0 && (
+                                <button onClick={handleClickDre} className='ml-5'><FaArrowLeft /></button>
+                            )}
+                            {count === 73 && (
+                                <div className='border-[1px] p-4 rounded-3xl ml-7 hover:bg-[#F27BBD] hover:text-white w-fit'>
+                                    <button onClick={handleClickResult}>Xem kết quả</button>
+                                </div>
+                            )}
+                        </div>
                         {result && <Result result={result} />}
                     </div>
                 </div>
