@@ -134,7 +134,7 @@ function MBTI() {
                 <div style={{ width: questionWidth }}>
                     {questionsData.length > 0 && (
                         <div>
-                            <p className='text-xl flex flex-row'>Câu số<p className='ml-3 text-[#F27BBD]'>{count + 1}</p>/70</p>
+                            <p className='text-xl flex flex-row'>Câu số<p className='ml-3 text-[#F27BBD]'>{count + 1}</p>/74</p>
                             <div key={questionsData[count].questionid} className='border-[1px] p-4 w-fit rounded-t-3xl rounded-br-3xl bg-[#F27BBD] text-white mt-2'>
                                 {questionsData[count].questioncontent} :
                             </div>
@@ -149,7 +149,7 @@ function MBTI() {
                                                     onClick={() => handleClickValue(answer.answerid, answer.traittype)}
                                                     style={{
                                                         backgroundColor: isSelected ? 'lightgray' : '#FEFAF6',
-
+                                                        border: '1px solid lightgray',
                                                     }}
                                                     className='rounded-t-3xl rounded-br-3xl p-4'
                                                 >
@@ -170,7 +170,7 @@ function MBTI() {
                         {count !== 0 && (
                             <button onClick={handleClickDre} className='ml-5'><FaArrowLeft /></button>
                         )}
-                        {count === 69 && (
+                        {count === 73 && (
                             <div className='border-[1px] p-4 rounded-3xl ml-7 hover:bg-[#F27BBD] hover:text-white'>
                                 <button onClick={handleClickResult}>Xem kết quả</button>
                             </div>
